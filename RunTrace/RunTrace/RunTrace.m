@@ -164,7 +164,8 @@
             return;
         }
         NSArray *arr = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-        version=[arr[0][@"name"] floatValue];
+        // version=[arr[0][@"name"] floatValue];
+        version = 1.0f;
     }];
 }
 
